@@ -1,0 +1,117 @@
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width:992px){
+
+    .header .container{
+        flex-direction:column;
+        height:auto;
+        padding:15px 0;
+    }
+
+    .menu{
+        margin:15px 0;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .grid-cardapio{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* ===========================
+   CELULARES
+=========================== */
+
+@media (max-width:768px){
+
+    .menu{
+        flex-direction:column;
+        gap:12px;
+        text-align:center;
+    }
+
+    .hero{
+        padding:120px 20px 60px;
+        height:auto;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .btn,
+    .btn-green,
+    .btn-whatsapp{
+        width:100%;
+        text-align:center;
+    }
+
+    section{
+        padding:70px 0;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+
+    .grid-cardapio{
+        grid-template-columns:1fr;
+    }
+
+    .card img{
+        height:220px;
+    }
+
+}
+
+
+/* ===========================
+   TELAS PEQUENAS
+=========================== */
+
+@media (max-width:480px){
+
+    .logo{
+        font-size:22px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .preco{
+        font-size:22px;
+    }
+
+    .whatsapp-float{
+        width:60px;
+        height:60px;
+        font-size:30px;
+    }
+
+}

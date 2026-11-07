@@ -1,0 +1,126 @@
+/* ===========================
+   ANIMAÇÕES
+=========================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.08);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+@keyframes float {
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+.hero-content{
+
+    animation:fadeInUp 1.2s ease;
+
+}
+
+.card{
+
+    animation:fadeInUp .8s ease;
+
+}
+
+.whatsapp-float{
+
+    animation:pulse 2s infinite;
+
+}
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px) scale(1.03);
+
+}
+
+.card img{
+
+    transition:.5s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.menu a{
+
+    position:relative;
+
+}
+
+.menu a::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#D4AF37;
+    transition:.3s;
+
+}
+
+.menu a:hover::after{
+
+    width:100%;
+
+}
+
+.logo{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+section{
+
+    animation:fadeInUp .8s ease;
+
+}
